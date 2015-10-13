@@ -1,0 +1,340 @@
+html, body, div, span, applet, object, iframe,
+h1, ul, li, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+body {
+font-family: Helvetica, Arial, Verdana, sans-serif;
+	min-height: 100px;
+	background: #6e87a1;
+	color: white;
+
+}
+section {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	fomt-size:100;
+	width:90%;
+  margin: 4em auto 1em; }
+a {
+  text-decoration: none; }
+
+h1 {
+  text-align: center;
+  font-family: "Unica One";
+  font-size: 5em;
+  margin-bottom: 1em;
+  text-shadow: 0 1px 1px white;
+  color: #fff; }
+h1 span {
+  display: block;
+  margin-top: 6px;
+  letter-spacing: 7px;
+  font: 14px Verdana;
+}
+@font-face {
+    font-family: 'Social';
+    src: url('./fonts/socialicons-webfont.eot');
+    src: url('./fonts/socialicons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/socialicons-webfont.woff') format('woff'),
+         url('./fonts/socialicons-webfont.ttf') format('truetype'),
+         url('./fonts/socialicons-webfont.svg#SocialIconsMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.container { width:262px; margin:0 auto; padding-top:200px; }
+
+#bar { width:100%; height:35px; padding:15px 0; background:#f#f#f; }
+#container { width:960px; margin:0 auto; }
+
+/*-------LOGIN STARTS HERE -------*/
+
+/* Login Container (default to float:right) */
+#loginContainer {
+    position:relative;
+    float:right;
+    font-size:12px;
+}
+
+/* Login Button */
+#loginButton { 
+	 text-align: center;
+    display:inline-block;
+    float:right;
+    background:#d2e0ea url(../images/buttonbg.png) repeat-x; 
+    border:10px solid #899caa; 
+    border-radius:30px;
+    -moz-border-radius:3px;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+}
+
+/* Login Button Text */
+#loginButton span {
+	 text-align: center;
+    color:#445058; 
+    font-size:18px; 
+    font-weight:bold; 
+    text-shadow:1px 1px #fff; 
+    padding:7px 29px 9px 10px;
+    background:url(../images/loginArrow.png) no-repeat 53px 7px;
+    display:block
+}
+
+#loginButton:hover {
+    background:url(../images/buttonbgHover.png) repeat-x;
+}
+
+/* Login Box */
+#loginBox {
+    position:absolute;
+    top:34px;
+    right:0;
+    display:none;
+    z-index:29;
+}
+
+/* If the Login Button has been clicked */    
+#loginButton.active {
+    border-radius:3px 3px 0 0;
+}
+
+#loginButton.active span {
+    background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#loginButton.active em {
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#d2e0ea;
+    bottom:-1px;
+}
+
+/* Login Form */
+#loginForm {
+    width:248px; 
+    border:1px solid #899caa;
+    border-radius:3px 0 3px 3px;
+    -moz-border-radius:3px 0 3px 3px;
+    margin-top:-1px;
+    background:#d2e0ea;
+    padding:6px;
+}
+
+#loginForm fieldset {
+    margin:0 0 12px 0;
+    display:block;
+    border:0;
+    padding:0;
+}
+
+fieldset#body {
+    background:#fff;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    padding:10px 13px;
+    margin:0;
+}
+
+#loginForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label {
+    color:#3a454d;
+    margin:9px 0 0 0;
+    display:block;
+    float:left;
+}
+
+#loginForm #body fieldset label {
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+}
+
+/* Default Input */
+#loginForm input {
+    width:92%;
+    border:1px solid #899caa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    color:#3a454d;
+    font-weight:bold;
+    padding:8px 8px;
+    box-shadow:inset 0px 1px 3px #bbb;
+    -webkit-box-shadow:inset 0px 1px 3px #bbb;
+    -moz-box-shadow:inset 0px 1px 3px #bbb;
+    font-size:12px;
+}
+
+/* Sign In Button */
+#loginForm #login {
+    width:auto;
+    float:left;
+    background:#339cdf url(../images/loginbuttonbg.png) repeat-x;
+    color:#fff;
+    padding:7px 10px 8px 10px;
+    text-shadow:0px -1px #278db8;
+    border:1px solid #339cdf;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    margin:0 12px 0 0;
+    cursor:pointer;
+    *padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+/* Forgot your password */
+#loginForm span {
+    text-align:center;
+    display:block;
+    padding:7px 0 4px 0;
+}
+
+#loginForm span a {
+    color:#3a454d;
+    text-shadow:1px 1px #fff;
+    font-size:12px;
+}
+
+input:focus {
+    outline:none;
+}
+#content {
+	width:960px;
+	margin:100px auto;
+	background:#ccc;
+	padding:100px 0;
+}
+
+#content .menu {
+	text-align:center;
+	padding-top:10px;
+}
+
+#content .menu .primary-menu {
+	list-style-type:none;
+	position:relative;
+}
+
+#content .menu .primary-menu li {
+	display:inline;
+	text-align:center;
+	margin:0 5px;
+	position:relative;
+}
+
+#content .menu .primary-menu li a {
+	position:relative;
+	text-decoration:none;
+	font-family:'Social' !important;
+	font-size:100px;
+	background:#d9d9d9;
+	display:inline-block;
+	width:150px;
+	height:150px;
+	padding-top:15px;
+	color:#fff;
+	border:3px solid #fff;
+	
+	-webkit-border-radius:1000px;
+	-moz-border-radius:100px;
+	-o-border-radius:100px;
+	-ms-border-radius:100px;
+	-khtml-border-radius:100px;
+	border-radius:100px;
+	
+	-webkit-box-shadow:0 0 1px 1px #afafaf;
+	-moz-box-shadow:0 0 1px 1px #afafaf;
+	-o-box-shadow: 0 0 1px 1px #afafaf;
+	-ms-box-shadow: 0 0 1px 1px #afafaf;
+	-khtml-box-shadow:0 0 1px 1px #afafaf;
+	box-shadow:0 0 1px 1px #afafaf;
+	
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-ms-transition:all 1s;
+	-khtml-transition:all 1s;
+	transition:all 1s;
+	
+	behavior: url(pie/PIE.htc); /* CSS3 Fix for Internet Explorer */
+}
+
+#content .menu .primary-menu li.facebook a:hover { background:#00438f;}
+#content .menu .primary-menu li.twitter a:hover { background:#00b8df;}
+#content .menu .primary-menu li.flickr a:hover { background:#df00bd;}
+#content .menu .primary-menu li.rss a:hover { background:#ff7800;}
+#content .menu .primary-menu li.mail a:hover { background:#1d1d1d;}
+
+#content .menu .primary-menu li a:hover {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-khtml-transform: rotate(360deg);
+	transform: rotate(360deg);
+	
+	behavior: url(pie/PIE.htc); /* CSS3 Fix for Internet Explorer */
+}
+
+#content .menu .primary-menu li span.social-span {
+	    text-shadow:1px 1px #fff; 
+	font-family:Arial;
+	font-size:11px;
+	position:absolute;
+	width:100px;
+	top:45px;
+	left:-45%;
+	background:#ffffff;
+	padding:5px;
+	border:1px solid #B8B8B8;
+	opacity:0;
+	
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-transition:opacity 1s ease-in-out;
+	-moz-transition:opacity 1s ease-in-out;
+	-o-transition:opacity 1s ease-in-out;
+	-ms-transition:opacity 1s ease-in-out;
+	-khtml-transition:opacity: 1s ease-in-out;
+	transition:opacity 1s ease-in-out;
+	
+	behavior: url(pie/PIE.htc); /* CSS3 Fix for Internet Explorer */
+}
+
+#content .menu .primary-menu li a:hover ~ span.social-span {
+	opacity:1;
+}
+
+#content .menu .primary-menu li span.social-span:after {
+	font-family:Arial;
+	font-size:11px;
+	font-color:#1d1d1d;
+	content:"";
+	position:absolute;
+	border-color:#fff transparent;
+	display:block;
+	top:-7px;
+	left:40%;
+	width:0;
+	border-width:0 7px 7px;
+	border-style:solid;
+}
